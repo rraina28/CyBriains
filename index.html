@@ -1,43 +1,1811 @@
-<div class="product-grid">
+<!DOCTYPE html>
+<html lang="en">
 
-    <!-- Scam Kavatch Product -->
-    <div class="product-box">
+<head>
 
-      <img src="assets/scam-kavatch-logo.png" alt="Scam Kavatch Logo">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <h4>Scam Kavatch Pro</h4>
+<title>CyBrains | Artificial Intelligence | Cyber Security | Enterprise Solutions</title>
 
-      <p>
-        An advanced cyber security app that detects suspicious links, fraud
-        attempts, and scam activities in real time.
-      </p>
+<meta name="description"
+content="CyBrains is an emerging Artificial Intelligence and Cyber Security company delivering innovative enterprise solutions, intelligent automation and digital protection technologies.">
 
-      <button onclick="window.location.href='https://youtu.be/-X61cJZySB4'">
-        View Product
-      </button>
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    </div>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- RAPID Product -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <div class="product-box">
+<style>
 
-      <img src="assets/rapid-logo.png"
-           alt="Rapid Logo"
-           style="height:70px;border-radius:14px;">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Poppins',sans-serif;
+}
 
-      <h4>Rapid</h4>
+body{
+background:#07111f;
+color:#fff;
+line-height:1.7;
+overflow-x:hidden;
+}
 
-      <p>
-        AI-powered Relationship & Pursuit Intelligence platform helping enterprise
-        sales teams prepare for meetings, generate company insights, collaborate,
-        manage customer relationships and improve sales win rates.
-      </p>
+a{
+text-decoration:none;
+}
 
-      <button onclick="document.getElementById('rapid').scrollIntoView({behavior:'smooth'})">
-        Learn More
-      </button>
+img{
+max-width:100%;
+}
 
-    </div>
+.container{
+width:90%;
+max-width:1280px;
+margin:auto;
+}
+
+/*======================
+NAVIGATION
+=======================*/
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+
+background:rgba(5,15,35,.88);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+nav{
+
+height:80px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.logo{
+
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+.logo img{
+
+height:52px;
+width:auto;
+
+}
+
+.logo h2{
+
+font-size:30px;
+
+font-weight:700;
+
+background:linear-gradient(90deg,#29B6F6,#66BB6A);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
+}
+
+nav ul li a{
+
+color:#fff;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+color:#29B6F6;
+
+}
+
+/*======================
+HERO
+=======================*/
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+background:
+
+linear-gradient(rgba(4,10,25,.92),rgba(4,10,25,.95)),
+
+url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero-content{
+
+max-width:820px;
+
+padding-top:70px;
+
+}
+
+.hero h4{
+
+color:#66BB6A;
+
+font-size:18px;
+
+letter-spacing:2px;
+
+margin-bottom:20px;
+
+text-transform:uppercase;
+
+}
+
+.hero h1{
+
+font-size:62px;
+
+line-height:1.15;
+
+margin-bottom:25px;
+
+font-weight:800;
+
+}
+
+.hero h1 span{
+
+color:#29B6F6;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+color:#c7d2e2;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+padding:16px 35px;
+
+border-radius:40px;
+
+font-weight:600;
+
+transition:.3s;
+
+display:inline-block;
+
+}
+
+.btn-primary{
+
+background:linear-gradient(90deg,#29B6F6,#43A047);
+
+color:#fff;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-outline{
+
+border:2px solid #29B6F6;
+
+color:#fff;
+
+}
+
+.btn-outline:hover{
+
+background:#29B6F6;
+
+}
+
+/*====================
+SECTION
+=====================*/
+
+section{
+
+padding:100px 0;
+
+}
+
+.section-title{
+
+font-size:42px;
+
+text-align:center;
+
+margin-bottom:25px;
+
+font-weight:700;
+
+}
+
+.section-sub{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+color:#c7d2e2;
+
+font-size:18px;
+
+margin-bottom:60px;
+
+}
+
+/*=====================
+ABOUT
+======================*/
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:45px;
+
+align-items:center;
+
+}
+
+.about-card{
+
+background:#0f1b2e;
+
+padding:40px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.about-card h3{
+
+font-size:28px;
+
+margin-bottom:20px;
+
+color:#29B6F6;
+
+}
+
+.about-card p{
+
+color:#d7dfeb;
+
+margin-bottom:18px;
+
+}
+
+/*====================
+VISION
+====================*/
+
+.vm-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+.vm-box{
+
+background:#10203a;
+
+padding:40px;
+
+border-radius:20px;
+
+border-left:5px solid #29B6F6;
+
+transition:.3s;
+
+}
+
+.vm-box:hover{
+
+transform:translateY(-8px);
+
+}
+
+.vm-box h3{
+
+margin-bottom:20px;
+
+font-size:28px;
+
+color:#66BB6A;
+
+}
+
+.vm-box p{
+
+color:#dbe5f0;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:44px;
+
+}
+
+nav{
+
+flex-direction:column;
+
+height:auto;
+
+padding:20px 0;
+
+}
+
+nav ul{
+
+margin-top:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<nav>
+
+<div class="logo">
+
+<img src="assets/cybrains.png" alt="CyBrains Logo">
+
+<h2>CyBrains</h2>
 
 </div>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#vision">Vision</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#technology">Technology</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<h4>Artificial Intelligence • Cyber Security • Enterprise Solutions</h4>
+
+<h1>
+  Securing Tomorrow with
+  <span>Intelligent AI Solutions</span>
+</h1>
+
+<p>
+CyBrains is an emerging technology company dedicated to building intelligent Artificial Intelligence and Cyber Security solutions that empower businesses and individuals. We combine innovation, security and human-centered design to create practical technologies for today's digital world.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products" class="btn btn-primary">
+
+Explore Our Products
+
+</a>
+
+<a href="#about" class="btn btn-outline">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2 class="section-title">
+
+About CyBrains
+
+</h2>
+
+<p class="section-sub">
+
+Transforming Ideas into Intelligent Solutions
+
+</p>
+
+<div class="about-grid">
+
+<div class="about-card">
+
+<h3>
+
+Who We Are
+
+</h3>
+
+<p>
+
+CyBrains is an emerging Artificial Intelligence and Cyber Security company committed to developing innovative digital solutions that solve real-world business and consumer challenges.
+
+</p>
+
+<p>
+
+Our products combine Artificial Intelligence, Enterprise Technologies and Cyber Security to help organizations work smarter while protecting users against rapidly evolving cyber threats.
+
+</p>
+
+<p>
+
+We believe technology should not only be intelligent—it should also be secure, practical, scalable and easy to use.
+
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>
+
+What We Build
+
+</h3>
+
+<p>
+
+Our portfolio spans Enterprise AI, Business Productivity, Intelligent Automation, Cyber Security, Fraud Prevention and Digital Safety solutions.
+
+</p>
+
+<p>
+
+Every CyBrains product is designed with enterprise-grade security, modern architecture and customer-centric innovation.
+
+</p>
+
+<p>
+
+Our objective is simple:
+
+<strong>
+
+Helping businesses innovate confidently while enabling individuals to stay secure in an increasingly connected digital world.
+
+</strong>
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="vision">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Vision & Mission
+
+</h2>
+
+<div class="vm-grid">
+
+<div class="vm-box">
+
+<h3>
+
+Our Vision
+
+</h3>
+
+<p>
+
+To become a globally trusted technology company delivering innovative Artificial Intelligence and Cyber Security solutions that improve lives, accelerate business growth and create a safer digital ecosystem.
+
+</p>
+
+</div>
+
+<div class="vm-box">
+
+<h3>
+
+Our Mission
+
+</h3>
+
+<p>
+
+To build intelligent, secure and scalable AI and Cyber Security products that solve real-world business and consumer challenges through continuous innovation, responsible AI and customer-centric design.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PART 2 STARTS FROM HERE -->
+<!-- ==========================
+WHY CYBRAINS
+=========================== -->
+
+<section id="why">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose CyBrains
+</h2>
+
+<p class="section-sub">
+Delivering intelligent technology solutions that combine innovation,
+security and enterprise-grade reliability.
+</p>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<div class="feature-icon">🧠</div>
+<h3>AI First</h3>
+<p>
+Building intelligent solutions powered by next-generation Artificial
+Intelligence to improve productivity and decision making.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🛡</div>
+<h3>Cyber Security Focused</h3>
+<p>
+Protecting businesses and individuals from evolving cyber threats,
+fraud, phishing and malicious attacks.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🏢</div>
+<h3>Enterprise Ready</h3>
+<p>
+Designed with scalability, performance and security for organizations
+of every size.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">🤝</div>
+<h3>Human-Centered Innovation</h3>
+<p>
+Technology should empower people. Every solution is built around real
+customer needs.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">📈</div>
+<h3>Scalable Solutions</h3>
+<p>
+Cloud-ready platforms that grow with your business and future
+technology needs.
+</p>
+</div>
+
+<div class="feature-card">
+<div class="feature-icon">✅</div>
+<h3>Trusted Technology</h3>
+<p>
+Reliable, secure and professionally engineered software built for
+long-term value.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+OUR PRODUCTS
+=========================== -->
+
+<section id="products">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Products
+</h2>
+
+<p class="section-sub">
+
+CyBrains develops innovative Artificial Intelligence and Cyber Security
+solutions that help organizations work smarter while protecting users
+from modern cyber threats.
+
+</p>
+
+<div class="product-grid">
+
+<!-- RAPID AI -->
+
+<div class="product-card">
+
+<div class="product-logo">
+
+<img src="assets/rapid.png"
+alt="Rapid AI">
+
+</div>
+
+<h2>Rapid AI</h2>
+
+<h4>Enterprise AI Assistant</h4>
+
+<p>
+
+Rapid AI is an enterprise-grade AI platform designed for sales teams,
+consultants, client partners and business leaders. It provides instant
+business intelligence, company research and AI-powered insights to
+improve customer engagement and accelerate business growth.
+
+</p>
+
+<ul>
+
+<li>✔ Company Research</li>
+
+<li>✔ Financial Analysis</li>
+
+<li>✔ Leadership Profiles</li>
+
+<li>✔ Industry Insights</li>
+
+<li>✔ Competitor Intelligence</li>
+
+<li>✔ Sales Preparation</li>
+
+<li>✔ Proposal Assistance</li>
+
+<li>✔ Account Planning</li>
+
+<li>✔ AI Knowledge Assistant</li>
+
+<li>✔ Meeting Preparation</li>
+
+</ul>
+
+<a href="rapid/index.html" class="btn btn-primary">
+
+Learn More
+
+</a>
+
+</div>
+
+<!-- SCAM KAVATCH -->
+
+<div class="product-card">
+
+<div class="product-logo">
+
+<img src="assets/scam-kavatch-logo.png"
+alt="Scam Kavatch Pro">
+
+</div>
+
+<h2>Scam Kavatch Pro</h2>
+
+<h4>AI Powered Cyber Protection</h4>
+
+<p>
+
+Scam Kavatch Pro is an advanced cyber safety platform that protects
+users against phishing attacks, fraudulent websites, suspicious URLs,
+digital arrest scams, fake investment schemes, impersonation fraud and
+other emerging cyber threats.
+
+</p>
+
+<ul>
+
+<li>✔ Suspicious URL Detection</li>
+
+<li>✔ Scam Detection</li>
+
+<li>✔ Phishing Protection</li>
+
+<li>✔ Digital Arrest Awareness</li>
+
+<li>✔ Fake Investment Scam Protection</li>
+
+<li>✔ Fraud Alerts</li>
+
+<li>✔ Safe Browsing Assistance</li>
+
+<li>✔ Cyber Awareness Guidance</li>
+
+</ul>
+
+<a href="scamkavatch/index.html"
+class="btn btn-primary">
+
+Learn More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/*==========================
+WHY CYBRAINS
+===========================*/
+
+.feature-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.feature-card{
+
+background:#0f1b2e;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.feature-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#29B6F6;
+
+box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.feature-icon{
+
+font-size:48px;
+
+margin-bottom:18px;
+
+}
+
+.feature-card h3{
+
+margin-bottom:15px;
+
+color:#29B6F6;
+
+font-size:24px;
+
+}
+
+.feature-card p{
+
+color:#d8e1ec;
+
+}
+
+/*==========================
+PRODUCTS
+===========================*/
+
+.product-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+
+gap:40px;
+
+margin-top:60px;
+
+}
+
+.product-card{
+
+background:#10203a;
+
+padding:45px;
+
+border-radius:25px;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.product-card:hover{
+
+transform:translateY(-12px);
+
+border-color:#29B6F6;
+
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.product-logo{
+
+height:120px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin-bottom:25px;
+
+}
+
+.product-logo img{
+
+height:90px;
+
+width:auto;
+
+object-fit:contain;
+
+}
+
+.product-card h2{
+
+font-size:34px;
+
+margin-bottom:8px;
+
+text-align:center;
+
+}
+
+.product-card h4{
+
+color:#66BB6A;
+
+text-align:center;
+
+margin-bottom:25px;
+
+font-weight:600;
+
+}
+
+.product-card p{
+
+color:#d6dfea;
+
+margin-bottom:25px;
+
+}
+
+.product-card ul{
+
+list-style:none;
+
+margin-bottom:35px;
+
+}
+
+.product-card ul li{
+
+padding:9px 0;
+
+border-bottom:1px solid rgba(255,255,255,.05);
+
+color:#dbe5ef;
+
+}
+
+.product-card .btn{
+
+display:inline-block;
+
+margin-top:10px;
+
+}
+
+@media(max-width:900px){
+
+.product-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+</style>
+
+<!-- PART 3 STARTS HERE -->
+<!-- ==========================
+TECHNOLOGY EXPERTISE
+========================== -->
+
+<section id="technology">
+
+<div class="container">
+
+<h2 class="section-title">
+Technology Expertise
+</h2>
+
+<p class="section-sub">
+Leveraging cutting-edge technologies to deliver intelligent, secure and scalable
+solutions for enterprises and consumers.
+</p>
+
+<div class="tech-grid">
+
+<div class="tech-card">
+<div class="tech-icon">🤖</div>
+<h3>Artificial Intelligence</h3>
+<p>
+Enterprise AI assistants, intelligent search, predictive analytics,
+knowledge management and decision support.
+</p>
+</div>
+
+<div class="tech-card">
+<div class="tech-icon">🔒</div>
+<h3>Cyber Security</h3>
+<p>
+Advanced cyber protection, phishing detection, fraud prevention,
+threat intelligence and digital safety solutions.
+</p>
+</div>
+
+<div class="tech-card">
+<div class="tech-icon">💼</div>
+<h3>Business Productivity</h3>
+<p>
+AI-powered tools that automate workflows, enhance collaboration and
+improve operational efficiency.
+</p>
+</div>
+
+<div class="tech-card">
+<div class="tech-icon">🧠</div>
+<h3>Generative AI</h3>
+<p>
+Large Language Models, AI Assistants, Retrieval Augmented Generation
+and enterprise knowledge platforms.
+</p>
+</div>
+
+<div class="tech-card">
+<div class="tech-icon">☁️</div>
+<h3>Cloud Technologies</h3>
+<p>
+Scalable cloud-native applications with security, availability and
+performance built into every deployment.
+</p>
+</div>
+
+<div class="tech-card">
+<div class="tech-icon">🏢</div>
+<h3>Enterprise Consulting</h3>
+<p>
+Technology advisory, digital transformation and AI adoption strategies
+for modern organizations.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+INDUSTRIES
+========================== -->
+
+<section id="industries">
+
+<div class="container">
+
+<h2 class="section-title">
+Industries We Serve
+</h2>
+
+<p class="section-sub">
+Our solutions are designed to address challenges across multiple industry
+verticals.
+</p>
+
+<div class="industry-grid">
+
+
+<div class="industry-card">🏦<h3>Enterprise</h3></div>
+
+<div class="industry-card">🎓<h3>Consumers</h3></div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+WHY CUSTOMERS CHOOSE US
+========================== -->
+
+<section id="customers">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Customers Choose Us
+</h2>
+
+<p class="section-sub">
+Our commitment to innovation, quality and customer success makes CyBrains a
+trusted technology partner.
+</p>
+
+<div class="customer-grid">
+
+<div class="customer-card">
+<div class="customer-icon">💡</div>
+<h3>Innovation</h3>
+<p>
+Practical AI and cybersecurity solutions designed to solve real business
+challenges.
+</p>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">🔐</div>
+<h3>Security</h3>
+<p>
+Security is embedded into every product from design through deployment.
+</p>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">⚡</div>
+<h3>Performance</h3>
+<p>
+High-performance applications engineered for speed, scalability and
+reliability.
+</p>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">🤝</div>
+<h3>Customer Focus</h3>
+<p>
+Solutions designed around customer requirements and long-term value.
+</p>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">⭐</div>
+<h3>Reliability</h3>
+<p>
+Dependable products built with enterprise-grade standards and quality.
+</p>
+</div>
+
+<div class="customer-card">
+<div class="customer-icon">🚀</div>
+<h3>Continuous Improvement</h3>
+<p>
+Constant innovation to ensure our products remain future-ready.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/*======================
+TECHNOLOGY
+======================*/
+
+.tech-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+
+}
+
+.tech-card{
+
+background:#0f1b2e;
+padding:35px;
+border-radius:20px;
+text-align:center;
+border:1px solid rgba(255,255,255,.08);
+transition:.35s;
+
+}
+
+.tech-card:hover{
+
+transform:translateY(-10px);
+border-color:#29B6F6;
+box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.tech-icon{
+
+font-size:48px;
+margin-bottom:20px;
+
+}
+
+.tech-card h3{
+
+color:#29B6F6;
+margin-bottom:15px;
+
+}
+
+.tech-card p{
+
+color:#d7e1ec;
+
+}
+
+/*======================
+INDUSTRIES
+======================*/
+
+.industry-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+
+}
+
+.industry-card{
+
+background:#10203a;
+padding:40px 20px;
+border-radius:18px;
+text-align:center;
+font-size:42px;
+border:1px solid rgba(255,255,255,.08);
+transition:.35s;
+
+}
+
+.industry-card:hover{
+
+transform:translateY(-8px);
+background:#143156;
+
+}
+
+.industry-card h3{
+
+font-size:22px;
+margin-top:18px;
+color:#fff;
+
+}
+
+/*======================
+CUSTOMERS
+======================*/
+
+.customer-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.customer-card{
+
+background:#0f1b2e;
+padding:35px;
+text-align:center;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+transition:.35s;
+
+}
+
+.customer-card:hover{
+
+transform:translateY(-10px);
+border-color:#66BB6A;
+
+}
+
+.customer-icon{
+
+font-size:46px;
+margin-bottom:20px;
+
+}
+
+.customer-card h3{
+
+color:#66BB6A;
+margin-bottom:15px;
+
+}
+
+.customer-card p{
+
+color:#dbe4ee;
+
+}
+
+</style>
+
+<!-- PART 4 STARTS HERE -->
+<!-- ==========================
+CONTACT
+========================== -->
+
+<section id="contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Let's Build the Future Together
+</h2>
+
+<p class="section-sub">
+
+Whether you're looking for Artificial Intelligence solutions,
+Enterprise Automation or Cyber Security technologies,
+our team would love to hear from you.
+
+</p>
+
+<div class="contact-wrapper">
+
+<div class="contact-card">
+
+<h3>📧 Email</h3>
+
+<p>
+
+<a href="mailto:support@cybrains.co.in">
+
+support@cybrains.co.in
+
+</a>
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>🏢 Company</h3>
+
+<p>
+
+CyBrains
+
+<br>
+
+Artificial Intelligence
+
+<br>
+
+Cyber Security
+
+<br>
+
+Enterprise Solutions
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>🚀 Our Promise</h3>
+
+<p>
+
+Building innovative technology that empowers businesses while protecting individuals in an increasingly connected world.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+<footer>
+
+<div class="container footer-container">
+
+<div class="footer-logo">
+
+<img src="assets/cybrains-logo.png" alt="CyBrains Logo">
+
+<h2>CyBrains</h2>
+
+</div>
+
+<p>
+
+Artificial Intelligence • Cyber Security • Enterprise Solutions
+
+</p>
+
+<p class="footer-text">
+
+Empowering Innovation. Securing the Digital Future.
+
+</p>
+
+<p class="copyright">
+
+© 2026 CyBrains. All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- Scroll Button -->
+
+<button id="topBtn">
+
+▲
+
+</button>
+
+<style>
+
+/*==========================
+CONTACT
+==========================*/
+
+.contact-wrapper{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.contact-card{
+
+background:#10203a;
+
+padding:40px;
+
+border-radius:20px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+
+}
+
+.contact-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#29B6F6;
+
+}
+
+.contact-card h3{
+
+margin-bottom:18px;
+
+color:#29B6F6;
+
+font-size:26px;
+
+}
+
+.contact-card p{
+
+color:#d9e3ef;
+
+font-size:17px;
+
+}
+
+.contact-card a{
+
+color:#66BB6A;
+
+font-weight:600;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+footer{
+
+background:#040b16;
+
+padding:60px 20px 30px;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+margin-top:80px;
+
+}
+
+.footer-container{
+
+text-align:center;
+
+}
+
+.footer-logo{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:15px;
+
+margin-bottom:25px;
+
+}
+
+.footer-logo img{
+
+height:55px;
+
+width:auto;
+
+}
+
+.footer-logo h2{
+
+font-size:34px;
+
+background:linear-gradient(90deg,#29B6F6,#66BB6A);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+footer p{
+
+margin:12px 0;
+
+color:#d3dbe6;
+
+}
+
+.footer-text{
+
+font-size:18px;
+
+}
+
+.copyright{
+
+font-size:15px;
+
+color:#8fa2b7;
+
+margin-top:25px;
+
+}
+
+/*==========================
+TOP BUTTON
+==========================*/
+
+#topBtn{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:52px;
+
+height:52px;
+
+border:none;
+
+border-radius:50%;
+
+background:#29B6F6;
+
+color:#fff;
+
+font-size:20px;
+
+cursor:pointer;
+
+display:none;
+
+transition:.3s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+#topBtn:hover{
+
+background:#43A047;
+
+transform:translateY(-5px);
+
+}
+
+</style>
+
+<script>
+
+/* Scroll Button */
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.body.scrollTop>300 || document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}
+
+else{
+
+topBtn.style.display="none";
+
+}
+
+}
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:'smooth'
+
+});
+
+}
+
+/* Simple fade animation */
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity=1;
+
+entry.target.style.transform="translateY(0px)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(
+"section,.feature-card,.product-card,.tech-card,.industry-card,.customer-card,.contact-card"
+).forEach(el => {
+
+    el.style.opacity = 0;
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "all .8s ease";
+    observer.observe(el);
+
+});
+
+</script>
+
+</body>
+
+</html>
+<div class="footer-links">
+
+<a href="privacy.html">Privacy Policy</a>
+
+<span>|</span>
+
+<a href="terms.html">Terms &amp; Conditions</a>
+
+<span>|</span>
+
+<a href="mailto:support@cybrains.co.in">Contact Us</a>
+
+</div>
+
+<p class="copyright">
+
+© 2026 CyBrains. All Rights Reserved.
+
+</p>
